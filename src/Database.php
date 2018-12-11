@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: EKMYmiamtermeze
+ * User: Muhammad Iqmal
  * Date: 10/12/2018
  * Time: 11:35 AM
  */
@@ -45,7 +45,7 @@ class Database
         self::$instance      = $this;
         $this->database_name = $database_name;
         $this->mysql         = mysqli_connect($host, $username, $password, $database_name);
-//        var_dump($this->mysql);
+
         if (!$this->mysql) {
             throw new DatabaseException('Database connection error: ' . mysqli_connect_error());
         }
