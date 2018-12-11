@@ -1,0 +1,23 @@
+{
+    "name": "iqmal852/dumper",
+    "authors": [
+        {
+            "name": "Muhammad Iqmal",
+            "email": "iqmalazim@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Dumper\\": "src/"
+        }
+    },
+    "require": {
+        "ext-zip": "*",
+        "symfony/console": "~3.0|~4.0",
+        "symfony/filesystem": "~3.0|~4.0",
+        "symfony/process": "~3.0|~4.0"
+    },
+    "bin": [
+        "dumper"
+    ]
+}
