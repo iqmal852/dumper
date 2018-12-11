@@ -9,6 +9,6 @@ if (file_exists(__DIR__.'/../../autoload.php')) {
 
 $app = new Symfony\Component\Console\Application('MySql Dumper', '0.1.0');
 
-$app->add(new Dumper\NewCommand);
+$app->add(new Dumper\MySql);
 
 $app->run();

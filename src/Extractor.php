@@ -109,9 +109,9 @@ class Extractor
         $name = "$directory/$this->date/" . system('date +%s%N') . '_' . $table . ".sql";
         echo $name . "\n";
         if($exceed){
-            return "mysqldump -u$this->username -p$this->password $this->db $table --where=\"1 limit $offset, $limit\"> $name";
+            return "mysqldump -h$this->host -u$this->username -p$this->password $this->db $table --where=\"1 limit $offset, $limit\"> $name";
         } else {
-            return "mysqldump -u$this->username -p$this->password $this->db $table> $name";
+            return "mysqldump -h$this->host -u$this->username -p$this->password $this->db $table> $name";
         }
 
     }
