@@ -97,7 +97,7 @@ class Extractor
      * @param null $limit
      * @return string
      */
-    protected function dumper($table,$exceed = false,$offset = null, $limit = null, $directory = '/tmp')
+    protected function dumper($table,$exceed = false,$offset = null, $limit = null, $directory = '/var/tmp')
     {
         $filesystem = new Filesystem();
 

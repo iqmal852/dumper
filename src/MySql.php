@@ -124,7 +124,7 @@ class MySql extends Command
      */
     protected function askUsername($input, $output, $helper)
     {
-        $question = new Question('What is database username ["root"]? ', 'user');
+        $question = new Question('What is database username ["root"]? ', 'root');
 
         $this->username = $helper->ask($input, $output, $question);
     }
@@ -138,7 +138,7 @@ class MySql extends Command
      */
     protected function askPassword($input, $output, $helper)
     {
-        $question = new Question('What is the database password [null]? ', 'password');
+        $question = new Question('What is the database password [null]? ');
 
         $question->setHidden(true);
 
